@@ -54,8 +54,6 @@ CREATE TABLE IF NOT EXISTS tcc (
     semestre INT
 );
 
--- Tabelas extras para casos especiais --
-
 CREATE TABLE IF NOT EXISTS professor_disciplina (
     prontuario TEXT,
     codigo_disciplina TEXT,
