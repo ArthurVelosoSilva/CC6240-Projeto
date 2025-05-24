@@ -21,8 +21,6 @@ VALUES ('2021001', 2022, 2, 'MEC102', 7.5);
 INSERT INTO tcc (grupo_id, ra1, ra2, ra3, orientador, ano, semestre)
 VALUES ('TCC001', '2021001', '2021002', null, 'P001', 2023, 2);
 
--- Inserções extras --
-
 INSERT INTO professor_disciplina (prontuario, codigo_disciplina) VALUES ('P001', 'MEC101');
 INSERT INTO professor_disciplina (prontuario, codigo_disciplina) VALUES ('P001', 'MEC102');
 
