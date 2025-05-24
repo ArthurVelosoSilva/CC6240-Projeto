@@ -5,7 +5,7 @@
 
 ## Descrição do Projeto
 
-Este projeto tem como objetivo migrar um banco de dados relacional desenvolvido na disciplina CC6240 para um banco NoSQL do tipo *Wide-column Store*, utilizando o DataStax Astra.
+Este projeto implementa um banco de dados NoSQL do tipo *Wide-column Store*, utilizando o DataStax Astra.
 
 O modelo de dados foi adaptado para contemplar as seguintes entidades:
 
@@ -51,9 +51,28 @@ Além da modelagem, o projeto responde a consultas que envolvem relacionamentos 
 - Conta ativa no [DataStax Astra](https://www.datastax.com/astra)  
 - Bundle de conexão seguro (`secure-connect-<seu-banco>.zip`)
 
-### Instalação
+### Passo a Passo para Rodar em Outro Computador
 
-1. Instale a biblioteca necessária:
+1. **Criar uma Conta no Astra DB**  
+   Acesse [https://www.datastax.com/astra](https://www.datastax.com/astra) e crie uma conta gratuita (pode usar login com Google).
 
-```bash
-pip install cassandra-driver
+2. **Criar um Novo Banco de Dados**
+   - Vá para "Dashboard" e clique em “Create Database”.
+   - Dê um nome para o banco e selecione o provedor de nuvem desejado (recomenda-se usar o gratuito, se disponível).
+   - Aguarde até que o banco esteja com status “ACTIVE”.
+
+3. **Baixar o Bundle de Conexão**
+   - Na página do banco, clique em “Connect”.
+   - Escolha a opção **“Python”**.
+   - Clique em **Download Bundle** para baixar o arquivo `secure-connect-<seu-banco>.zip`.
+
+4. **Adicionar o Bundle ao Projeto**
+   - Extraia o conteúdo do arquivo ZIP.
+   - Copie a pasta extraída para o diretório raiz do projeto.
+   - O nome da pasta deve coincidir com o nome usado no `connect_astra.py`.
+
+5. **Instalar a Biblioteca Necessária**
+   No terminal, execute:
+
+   ```bash
+   pip install cassandra-driver
