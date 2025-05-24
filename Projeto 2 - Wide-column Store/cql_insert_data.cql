@@ -1,7 +1,7 @@
 INSERT INTO aluno (ra, nome, curso_id) VALUES ('2021001', 'Ana Silva', 'ENG01');
 INSERT INTO aluno (ra, nome, curso_id) VALUES ('2021002', 'Bruno Souza', 'ENG01');
 
-INSERT INTO professor (prontuario, nome, departamento_id) VALUES ('P001', 'Dr. Carlos Lima', 'DPT01');
+INSERT INTO professor (prontuario, nome, departamento_id) VALUES ('P001', 'Carlos Lima', 'DPT01');
 
 INSERT INTO departamento (id, nome, chefe_prontuario) VALUES ('DPT01', 'Engenharia', 'P001');
 
@@ -27,4 +27,4 @@ INSERT INTO professor_disciplina (prontuario, codigo_disciplina) VALUES ('P001',
 INSERT INTO aluno_status_formatura (ra, formou) VALUES ('2021001', false);
 INSERT INTO aluno_status_formatura (ra, formou) VALUES ('2021002', true);
 
-INSERT INTO departamento_com_chefe (id, nome, chefe_prontuario, chefe_nome) VALUES ('DPT01', 'Engenharia', 'P001', 'Dr. Carlos Lima');
+INSERT INTO departamento_com_chefe (id, nome, chefe_prontuario, chefe_nome) VALUES ('DPT01', 'Engenharia', 'P001', 'Carlos Lima');
